@@ -38,6 +38,17 @@
             font-size: 150%;
 
         }
+
+        #float{
+            background-color: blueviolet;
+            height: 50mm;
+            width: 50mm;
+            float: right;
+        }
+
+        .clear{
+            clear: both;
+        }
        
 
     </style>
@@ -136,6 +147,148 @@ div tag is used to divide rhe perticular section of web page and edit every thin
     trying to use <b>div tag</b> in html 
 </div>
 <hr>
+<!-- Float......................Float...............................................Float............................. -->
+<h3>Float</h3>
+Floa helps us to move a perticular div and lace in the desired place of the user (mid left right etc )
+ <br>
+ and <i><u>for placing any text in between some  float to appear below the float</u></i> make another div give name to it and in css of that div use <b>float tag  and select both</b>
+
+<div id="float">
+    <h2>Float</h2>
+</div>
+
+<div class="clear-float"></div>
+<!-- positioning....................................................................positioning....................... -->
+<hr>
+<h2>positioning(relative and absolute)</h2>
+it helps to place th oblect in any place u want by using tags like left=50px,top=50px and can be placed any where on the webpage
+<br> <b>( if we want place it on page but dont want to apper on the page(used for moving animations) then we can place them with using negative values left=-500px )</b>
+
+<br>
+Example: <br>
+
+position=relative;<br>
+left=xmm;<br>
+top=zmm;<br>
+
+<br>
+<!-- z-index tag.......................z-index tag.........................z-index tag............................... -->
+<h2>z-index tag</h2>
+If some divs are placed in such a way that they are appearing front and back of one other then 
+<b>z-index tag (whose index will be greater thev one will appear on the front) </b>
+<br>
+<!-- opacity tag...................................opacity tag..................................opacity tag................ -->
+<h2>opacity tag</h2><br>
+<b>opacity tag</b> can be used to see through the front ond and what is present at the back <b>(if opacity is less then then is is highly transperent and in opposite case its lightly transperent)</b>
+<br>
+absolute positioning is some thing which is opposite of reletive and its position is fixed even when u scroll down the div with absolute position will be present there itself and other will be moving up or down based on ur scroll
+ its just like its sticking on ur screen <b>in place of absolute "position=absolute" u can also use sticky as "position=sticky"</b>
+<hr>
+<!-- types of positioning.......................types of positioning............................................... -->
+<h2>types of positioning</h2>
+<br>
+As there are several different types of positioning. <br>
+
+I'll give you a quick summary. <br>
+
+There's relative positioning. <br>
+
+That means we can move the elephant relative to where it would otherwise be.<br>
+
+There's absolute positioning which takes the element out of the flow of the page and allows us to move
+
+it around relative to the top left of the page.<br>
+
+Fixed positioning does the same thing, but it keeps the element fixed even when we scroll down the
+
+page.<br>
+
+Sticky works like relative until scrolled past a specific threshold which is then treated as fixed and
+
+static, which is the default value that an element will have.<br>
+
+If you don't declare a position for an element and you may use to forcefully remove some other positioning.<br>
+
+And for all of those types, with the exception of static, we can use top, bottom, left and right properties to get it exactly where we want it.<br>
+
+<hr>
+<!-- Margin........................Margin..............................Margin................................. -->
+<h2>Margin</h2>
+<br>It puts margin all around the div  and u need not to specify seperatly top and left 
+<br>margin:100 px(margi at all 4 sides of 100px) <br>
+margin:100px,50px(top & bottom,left & right) <br>
+margin:100px.50px,25px,10px{top,right,bottom,left(in clock wise direction starting from top)} <br>
+if u want to editonly one particular side use <b>margin-left or right or etc</b> and it make changes to that one side only
+<hr>
+<!-- padding.............................padding....................padding................... -->
+<h2>padding</h2> <br>
+So padding is pretty similar to margins, but it works on the inside of an object rather than the outside.
+
+<h3><b>margin outside of the object to place the div in postion in webpage and padding is for contents of the div </b></h3>
+<br>
+And <b>box-sizing=brdered box </b> for box shape (not clear still need to know more about it)
+And we can also give css to the body also 
+Make sure to male padding and margin of body and paragraphs to zero(0) if there is some gaps is present at left of webpage etc
+
+<hr>
+<!-- Borders......................................Borders.................................Borders............................... -->
+<h2>Borders</h2>
+border-color; red blue green yello { <b>color is applied to the border in clock wise direction starting from top</b> }
+<br>
+In same border-width can be used and many othe properties of border 
+
+<br><b> border-radous </b>can be used to make curve at the corners of the box and of it is set to 50% the it will be circle  instead of square or rectangle
+<br>
+<hr>
+
+<!-- Font............................font................................................. -->
+
+<h2> Font </h2>
+font-size
+font-family( font style ex:times new roman etc ) <br>
+<b>u can also check google fonts and use them by copying the link and pasting it in head section and the copying its
+font-family name and pasting it in the div or paragrapg (p) u wanted </b>
+<br>
+<!-- important trick..........................................................hover -->
+<b>important trick</b>
+<br>
+<!-- hover....................hover.........................hover..........................hover................. -->
+to make some thing hilight or make it underlined when the mouse is placed on it we use <b>hover tag</b> <br>
+example: <br>
+name of div or parar <b>.hover</b> { <br>
+    ......................text decorator: underline <br>
+    .......................color : any <br>
+..........................} <br>
+To know more google <b>css styling texts </b>
+<hr>
+<!-- Text aligner..................Text aligner.....................Text aligner.......................... -->
+<h2>Text aligner</h2>
+For aligning text we can use <b>Text-align:  tag</b><br>
+As <u>Text-align:center or right,etc</u>
+<br>
+and yo check you can generate some of the text by googling <b>Lorem ipsum </b>and use the text in ur website while preparing it.
+<hr>
+<br>
+
+
+<!-- Styling links...........Styling links........................Styling links.......................... -->
+<h2>Styling links</h2>
+we can give style to the link by using <b>hover tag</b>
+<br>
+<h2>open the link in the new tab </h2><br>
+use <b><i>target ="blank"</i></b> in the ancker tag after pasting the url of page u want to link <br>
+Example: <br>
+< a href="http://www.google.com" <b>target="blank"</b>>google< /a> br
+<a href="http://www.google.com" target="blank">google</a>
+
+
+
+
+
+
+
+
+
 
 
 
